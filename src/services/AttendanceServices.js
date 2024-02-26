@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const ATTENDANCE_BASE_REST_API_URL = 'http://localhost:8080/api/v1/attendance'; 
+const API_URL = 'http://localhost:8080/api/v1';
 
 class AttendanceServices {
     getAllAttendance() {
@@ -18,6 +19,9 @@ class AttendanceServices {
     updateAttendance(attendanceId, attendance) {
         return axios.put(`${ATTENDANCE_BASE_REST_API_URL}/${attendanceId}`, attendance);
     }
+    getAllEmployees = () => {
+        return axios.get(`${API_URL}/employees`);
+    };
 }
 
 export default new AttendanceServices();
