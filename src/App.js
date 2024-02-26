@@ -4,6 +4,8 @@ import './App.css';
 import ListEmployeeComponent from './components/ListEmployeeComponent';
 import HeaderComponent from './components/HeaderComponent';
 import AddEmployeeComponent from './components/AddEmployeeComponent';
+import ListAttendanceComponent from './components/ListAttendanceComponent'
+import AddAttendanceComponent from './components/AddAttendanceComponent';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/employees" element={<ListEmployeeComponent />} />
             <Route path="/add-employee" element={<AddEmployeeComponent />} />
             <Route path="/edit-employee/:id" element={<AddEmployeeComponent />} />
+            <Route path="/attendance" element={<ListAttendanceComponent />} />
+            <Route path="/add-attendance" element={<AddAttendanceComponent />} />
           </Routes>
         </div>
       </Router>
