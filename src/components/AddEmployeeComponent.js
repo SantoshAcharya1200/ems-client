@@ -17,6 +17,11 @@ const AddEmployeeComponent = () => {
     const saveOrUpdateEmployee = (e) => {
         e.preventDefault();
 
+        if (!first_name || !last_name || !gender || !age) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
         const employee = {first_name,middle_name,last_name,gender,age,address,contact_details}
 
         if(id){

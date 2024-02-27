@@ -7,6 +7,7 @@ import AddEmployeeComponent from './components/AddEmployeeComponent';
 import ListAttendanceComponent from './components/ListAttendanceComponent'
 import AddAttendanceComponent from './components/AddAttendanceComponent';
 
+
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/edit-employee/:id" element={<AddEmployeeComponent />} />
             <Route path="/attendance" element={<ListAttendanceComponent />} />
             <Route path="/add-attendance" element={<AddAttendanceComponent />} />
+
           </Routes>
         </div>
       </Router>
