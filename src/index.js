@@ -4,11 +4,60 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import AuthRoute from './components/AuthRoute';
+import ListAttendanceComponent from './components/ListAttendanceComponent';
+import ListEmployeeComponent from './components/ListEmployeeComponent';
+import AddEmployeeComponent from './components/AddEmployeeComponent';
+import AddAttendanceComponent from './components/AddAttendanceComponent';
+import AppContextProvider from './context/AppContextProvider';
+import Login from './components/Login';
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<AuthRoute/>,
+    errorElement:<AuthRoute/>,
+    children:[
+    {
+      path:"/",
+      element:<ListEmployeeComponent/>,
+    },
+    {
+      path:"/employees",
+      element:<ListEmployeeComponent/>,
+    },
+    {
+      path:"/attendance",
+      element:<ListAttendanceComponent/>,
+    },
+    {
+      path:"/add-employee",
+      element:<AddEmployeeComponent/>,
+    },
+    {
+      path:"/edit-employee/:id",
+      element:<AddEmployeeComponent/>,
+    },
+    {
+      path:"/add-attendance",
+      element:<AddAttendanceComponent/>,
+    },
+    {
+      path:"*",
+      element:<ListEmployeeComponent/>,
+    },
+    ]
+  },
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppContextProvider>
+
+    <RouterProvider router={router} />
+    </AppContextProvider>
   </React.StrictMode>
 );
 

@@ -81,7 +81,7 @@ const AddEmployeeComponent = () => {
                         <div className = "card-body">
                             <form>
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> First Name :</label>
+                                    <label className = "form-label"> First Name *:</label>
                                     <input
                                         type = "text"
                                         placeholder = "Enter first name"
@@ -107,7 +107,7 @@ const AddEmployeeComponent = () => {
                                 </div>
 
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Last Name :</label>
+                                    <label className = "form-label"> Last Name *:</label>
                                     <input
                                         type = "text"
                                         placeholder = "Enter last name"
@@ -120,7 +120,7 @@ const AddEmployeeComponent = () => {
                                 </div>
 
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Gender :</label>
+                                    <label className = "form-label"> Gender *:</label>
                                     <input
                                         type = "text"
                                         placeholder = "Enter gender"
@@ -133,7 +133,7 @@ const AddEmployeeComponent = () => {
                                 </div>
 
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Age :</label>
+                                    <label className = "form-label"> Age *:</label>
                                     <input
                                         type = "int"
                                         placeholder = "Enter age"
