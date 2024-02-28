@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Employee Attendance Management System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend implementation of an Employee Attendance Management System. It provides a user interface for managing employees, attendance records, and login/logout.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of employees
+- Add and edit employee records
+- View a list of attendance records
+- Add attendance records
+- View attendance details of specific employee
+- User login/logout functionality
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- React Router
+- Bootstrap (for styling)
+- Axios (for HTTP requests)
+- Context API (for state management)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm installed on your machine
 
-### `npm run build`
+### Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/SantoshAcharya1200/ems-client.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
+  `cd frontend`
 
-### `npm run eject`
+3. Install dependencies:
+   `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
+   `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
+1. Login
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![login](https://github.com/SantoshAcharya1200/ems-client/assets/41406942/48586eb3-2d96-46e5-ae8c-c08a152ad728)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Employee List
+  
+![employee_list](https://github.com/SantoshAcharya1200/ems-client/assets/41406942/7e9b03a0-de5b-4ae5-8ed4-c411b6fb54a9)
 
-## Learn More
+3. Add Employee
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ![add-employee](https://github.com/SantoshAcharya1200/ems-client/assets/41406942/5e46032e-a29e-44d8-b35e-0ba547b50cad)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Attendance List
 
-### Code Splitting
+   ![list-attendance](https://github.com/SantoshAcharya1200/ems-client/assets/41406942/17abb687-de95-45fa-9ed7-2900ed4b1c37)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Add Attendance
+   
+   ![add-attendance](https://github.com/SantoshAcharya1200/ems-client/assets/41406942/963eab13-adf7-4600-a192-9e83bae138c0)
 
-### Analyzing the Bundle Size
+6. Attendance Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ![attendance-details](https://github.com/SantoshAcharya1200/ems-client/assets/41406942/f55ec82f-4398-4aec-9098-e90e5bf1894b)
