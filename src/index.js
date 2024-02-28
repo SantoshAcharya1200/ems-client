@@ -11,7 +11,6 @@ import ListEmployeeComponent from './components/ListEmployeeComponent';
 import AddEmployeeComponent from './components/AddEmployeeComponent';
 import AddAttendanceComponent from './components/AddAttendanceComponent';
 import AppContextProvider from './context/AppContextProvider';
-import Login from './components/Login';
 
 const router = createBrowserRouter([
   {
@@ -55,7 +54,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AppContextProvider>
-
     <RouterProvider router={router} />
     </AppContextProvider>
   </React.StrictMode>

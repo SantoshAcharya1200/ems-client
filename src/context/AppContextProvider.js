@@ -6,9 +6,10 @@ const AppContextProvider = ({children}) => {
     const localLoginStatus = localStorage.getItem("santosh_login")
     const loginInit = localLoginStatus === "true" ? true: false;
     const [isLoggedIn, setIsLoggedIn] = useState(loginInit)
+    const [name,setName]=useState('')
   return (
     <AppContext.Provider value={{
-        user:{isLoggedIn, setIsLoggedIn}
+        user:{isLoggedIn, setIsLoggedIn,name,setName}
     }}>
         {children}
     </AppContext.Provider>

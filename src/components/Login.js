@@ -6,15 +6,22 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const { user: { setIsLoggedIn } } = useAppContext();
+  const { user: { setIsLoggedIn ,setName} } = useAppContext();
+
+  const loginList=[{u:'admin',p:'admin'},{u:'santosh',p:'santosh1234'},{u:'habi',p:'habi1234'},{u:'anil',p:'anil1234'}]
+  const verifyPassword=()=>{
+    return loginList.find((val)=>val.u===username&&val.p===password)
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Check username and password
-    if (username === 'admin' && password === 'admin') {
+    // if (username === 'admin' && password === 'admin') {
+    if (verifyPassword()) {
       // Login successful
       console.log('Login successful');
       setIsLoggedIn(true);
+      setName(username)
       localStorage.setItem("santosh_login",true)
       // You can redirect or perform other actions here
     } else {

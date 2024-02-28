@@ -56,7 +56,7 @@ const ListAttendanceComponent = () => {
                                 <th>Attendance Date</th>
                                 <th>Attendance Status</th>
                                 <th>Attendance Time</th>
-                                <th>Actions</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -67,9 +67,7 @@ const ListAttendanceComponent = () => {
                                     <td>{item.attendance_date}</td>
                                     <td>{item.attendance_status}</td>
                                     <td>{item.attendance_time}</td>
-                                    <td>
-                                        <Link className="btn btn-info" to={`/edit-employee/${item.id}`}>View Details</Link>
-                                    </td>
+                                   
                                 </tr>
                             ))}
                         </tbody>
@@ -100,7 +98,7 @@ const ListAttendanceComponent = () => {
                                         <th>Attendance Date</th>
                                         <th>Attendance Status</th>
                                         <th>Attendance Time</th>
-                                        <th>Actions</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -112,9 +110,7 @@ const ListAttendanceComponent = () => {
                                                 <td>{item.attendance_date}</td>
                                                 <td>{item.attendance_status}</td>
                                                 <td>{item.attendance_time}</td>
-                                                <td>
-                                                    <Link className="btn btn-info" to={`/edit-employee/${item.id}`}>View Details</Link>
-                                                </td>
+
                                             </tr>
                                         )
                                     ))}

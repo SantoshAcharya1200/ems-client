@@ -35,6 +35,11 @@ const AddAttendanceComponent = () => {
     const saveOrUpdateAttendance = (e) => {
         e.preventDefault();
 
+        if (!attendance_date || !attendance_status || !attendance_time ) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
         const attendance = { attendance_date, attendance_status, attendance_time, employee:{id:employee_id} };
 
         if (id) {
@@ -71,7 +76,7 @@ const AddAttendanceComponent = () => {
                         <div className="card-body">
                             <form>
                                 <div className="form-group mb-2">
-                                    <label className="form-label"> Attendance Date:</label>
+                                    <label className="form-label"> Attendance Date*:</label>
                                     <input
                                         type="date"
                                         placeholder="Enter Attendance Date"
@@ -82,10 +87,10 @@ const AddAttendanceComponent = () => {
                                 </div>
 
                                 <div className="form-group mb-2">
-                                    <label className="form-label"> Attendance Status:</label>
+                                    <label className="form-label"> Attendance Status*:</label>
                                     <input
                                         type="int"
-                                        placeholder="Enter Attendance Status"
+                                        placeholder="Enter Attendance Status(0:for check in,1:for check_out)"
                                         className="form-control"
                                         value={attendance_status}
                                         onChange={(e) => setAttendance_Status(e.target.value)}
@@ -93,7 +98,7 @@ const AddAttendanceComponent = () => {
                                 </div>
 
                                 <div className="form-group mb-2">
-                                    <label className="form-label"> Attendance Time:</label>
+                                    <label className="form-label"> Attendance Time*:</label>
                                     <input
                                         type="time"
                                         placeholder="Enter Attendance Time"
@@ -104,7 +109,7 @@ const AddAttendanceComponent = () => {
                                 </div>
 
                                 <div className="form-group mb-2">
-                                    <label className="form-label"> Employee:</label>
+                                    <label className="form-label"> Employee*:</label>
                                     <select
                                         className="form-control"
                                         value={employee_id}
